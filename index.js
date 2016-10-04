@@ -55,7 +55,7 @@ server.route({
             cache(cacheId, 100000 * 60 /*ttl in ms*/, function(passalong) {
               console.log("Looked in cache couldnt find tile going to database");
               // database connection
-              pg.connect("postgres://appdev:401@greene@gispub:5432/guc_utilities_unproj_onefile", function(err, client, done) {
+              pg.connect("postgres://username@database:port/table", function(err, client, done) {
                 if (err) {
                     passalong('Error fetching client from pool.', null);          
                 } else {
