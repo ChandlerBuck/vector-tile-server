@@ -10,8 +10,6 @@ To get going:
 npm install
 ```
 
-Rename `config.js.txt` to `config.js` and edit the layers and Postgres connection info.
-
 ``` bash
 node .
 ```
