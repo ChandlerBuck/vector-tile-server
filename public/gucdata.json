@@ -1,0 +1,1318 @@
+{
+  "version": 8,
+  "name": "GUC Data",
+  "sources": {
+    "gucdata": {
+      "type": "vector",
+      "tiles": [
+        "http://localhost:3000/featurelayers/{z}/{x}/{y}.pbf"
+      ]
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "rgba(0,0,0,0)"
+    }
+  }, {
+    "id": "Ele_StreetLight_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_StreetLight"]
+  }, {
+    "id": "Ele_StreetLight_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_StreetLight"]
+
+  }, {
+    "id": "Ele_StreetLight_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_StreetLight"]
+  },{
+    "id": "Ele_TreeTrimRecord_VW_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_TreeTrimRecord_VW"]
+  }, {
+    "id": "Ele_TreeTrimRecord_VW_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_TreeTrimRecord_VW"]
+
+  }, {
+    "id": "Ele_TreeTrimRecord_VW_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_TreeTrimRecord_VW"]
+  }, {
+    "id": "Ele_DistributionTransformer_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_DistributionTransformer"]
+  }, {
+    "id": "Ele_DistributionTransformer_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_DistributionTransformer"]
+
+  }, {
+    "id": "Ele_DistributionTransformer_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_DistributionTransformer"]
+  }, {
+    "id": "Ele_SwitchingFacility_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_SwitchingFacility"]
+  }, {
+    "id": "Ele_SwitchingFacility_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_SwitchingFacility"]
+
+  }, {
+    "id": "Ele_SwitchingFacility_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_SwitchingFacility"]
+  }, {
+    "id": "Ele_CapacitorBank_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_CapacitorBank"]
+  }, {
+    "id": "Ele_CapacitorBank_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_CapacitorBank"]
+
+  }, {
+    "id": "Ele_CapacitorBank_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_CapacitorBank"]
+  }, {
+    "id": "Ele_PriOverheadElectricLineSegment_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_PriOverheadElectricLineSegment"]
+  }, {
+    "id": "Ele_PriOverheadElectricLineSegment_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_PriOverheadElectricLineSegment"]
+
+  }, {
+    "id": "Ele_PriOverheadElectricLineSegment_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_PriOverheadElectricLineSegment"]
+  }, {
+    "id": "Ele_XMSwitch_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_XMSwitch"]
+  }, {
+    "id": "Ele_XMSwitch_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_XMSwitch"]
+
+  }, {
+    "id": "Ele_XMSwitch_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_XMSwitch"]
+  }, {
+    "id": "Ele_VoltageRegulator_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_VoltageRegulator"]
+  }, {
+    "id": "Ele_VoltageRegulator_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_VoltageRegulator"]
+
+  }, {
+    "id": "Ele_VoltageRegulator_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_VoltageRegulator"]
+  }, {
+    "id": "Ele_PriUGElectricLineSegment_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_PriUGElectricLineSegment"]
+  }, {
+    "id": "Ele_PriUGElectricLineSegment_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_PriUGElectricLineSegment"]
+
+  }, {
+    "id": "Ele_PriUGElectricLineSegment_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_PriUGElectricLineSegment"]
+  }, {
+    "id": "Ele_UndergroundStructure_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_UndergroundStructure"]
+  }, {
+    "id": "Ele_UndergroundStructure_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_UndergroundStructure"]
+
+  }, {
+    "id": "Ele_UndergroundStructure_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_UndergroundStructure"]
+  }, {
+    "id": "Ele_Switch_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_Switch"]
+  }, {
+    "id": "Ele_Switch_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_Switch"]
+
+  }, {
+    "id": "Ele_Switch_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_Switch"]
+  }, {
+    "id": "Ele_SecUGElectricLineSegment_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_SecUGElectricLineSegment"]
+  }, {
+    "id": "Ele_SecUGElectricLineSegment_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_SecUGElectricLineSegment"]
+
+  }, {
+    "id": "Ele_SecUGElectricLineSegment_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_SecUGElectricLineSegment"]
+  }, {
+    "id": "Ele_TRANSFORMERUNIT_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_TRANSFORMERUNIT"]
+  }, {
+    "id": "Ele_TRANSFORMERUNIT_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_TRANSFORMERUNIT"]
+
+  }, {
+    "id": "Ele_TRANSFORMERUNIT_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_TRANSFORMERUNIT"]
+  }, {
+    "id": "Ele_DynamicProtectiveDevice_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_DynamicProtectiveDevice"]
+  }, {
+    "id": "Ele_DynamicProtectiveDevice_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_DynamicProtectiveDevice"]
+
+  }, {
+    "id": "Ele_DynamicProtectiveDevice_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_DynamicProtectiveDevice"]
+  }, {
+    "id": "Ele_SupportStructure_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_SupportStructure"]
+  }, {
+    "id": "Ele_SupportStructure_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_SupportStructure"]
+
+  }, {
+    "id": "Ele_SupportStructure_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_SupportStructure"]
+  }, {
+    "id": "Ele_SecOverheadElectricLineSegment_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_SecOverheadElectricLineSegment"]
+  }, {
+    "id": "Ele_SecOverheadElectricLineSegment_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_SecOverheadElectricLineSegment"]
+
+  }, {
+    "id": "Ele_SecOverheadElectricLineSegment_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_SecOverheadElectricLineSegment"]
+  }, {
+    "id": "Ele_UndergroundLinearStructure_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FFFF00",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Ele_UndergroundLinearStructure"]
+  }, {
+    "id": "Ele_UndergroundLinearStructure_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FFFF00",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Ele_UndergroundLinearStructure"]
+
+  }, {
+    "id": "Ele_UndergroundLinearStructure_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FFFF00",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Ele_UndergroundLinearStructure"]
+  }, {
+    "id": "Gas_IsolatedRisers_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_IsolatedRisers"]
+  }, {
+    "id": "Gas_IsolatedRisers_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_IsolatedRisers"]
+
+  }, {
+    "id": "Gas_IsolatedRisers_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_IsolatedRisers"]
+  }, {
+    "id": "Gas_DistributionMain_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_DistributionMain"]
+  }, {
+    "id": "Gas_DistributionMain_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_DistributionMain"]
+
+  }, {
+    "id": "Gas_DistributionMain_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_DistributionMain"]
+  }, {
+    "id": "Gas_CPTestPoint_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_CPTestPoint"]
+  }, {
+    "id": "Gas_CPTestPoint_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_CPTestPoint"]
+
+  }, {
+    "id": "Gas_CPTestPoint_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_CPTestPoint"]
+  }, {
+    "id": "Gas_CPRectifier_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_CPRectifier"]
+  }, {
+    "id": "Gas_CPRectifier_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_CPRectifier"]
+
+  }, {
+    "id": "Gas_CPRectifier_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_CPRectifier"]
+  }, {
+    "id": "Gas_GateStation_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_GateStation"]
+  }, {
+    "id": "Gas_GateStation_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_GateStation"]
+
+  }, {
+    "id": "Gas_GateStation_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_GateStation"]
+  }, {
+    "id": "Gas_RegulatorStation_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_RegulatorStation"]
+  }, {
+    "id": "Gas_RegulatorStation_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_RegulatorStation"]
+
+  }, {
+    "id": "Gas_RegulatorStation_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_RegulatorStation"]
+  }, {
+    "id": "Gas_GasValve_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_GasValve"]
+  }, {
+    "id": "Gas_GasValve_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_GasValve"]
+
+  }, {
+    "id": "Gas_GasValve_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_GasValve"]
+  }, {
+    "id": "Gas_Service_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#FF1500",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Gas_Service"]
+  }, {
+    "id": "Gas_Service_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#FF1500",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Gas_Service"]
+
+  }, {
+    "id": "Gas_Service_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#FF1500",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Gas_Service"]
+  }, {
+    "id": "Sew_ForceMain_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#005A10",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Sew_ForceMain"]
+  }, {
+    "id": "Sew_ForceMain_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#005A10",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Sew_ForceMain"]
+
+  }, {
+    "id": "Sew_ForceMain_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#005A10",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Sew_ForceMain"]
+  }, {
+    "id": "Sew_SystemValve_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#005A10",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Sew_SystemValve"]
+  }, {
+    "id": "Sew_SystemValve_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#005A10",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Sew_SystemValve"]
+
+  }, {
+    "id": "Sew_SystemValve_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#005A10",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Sew_SystemValve"]
+  }, {
+    "id": "Sew_Manhole_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#005A10",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Sew_Manhole"]
+  }, {
+    "id": "Sew_Manhole_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#005A10",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Sew_Manhole"]
+
+  }, {
+    "id": "Sew_Manhole_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#005A10",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Sew_Manhole"]
+  }, {
+    "id": "Sew_GravityMain_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#005A10",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Sew_GravityMain"]
+  }, {
+    "id": "Sew_GravityMain_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#005A10",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Sew_GravityMain"]
+
+  }, {
+    "id": "Sew_GravityMain_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#005A10",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Sew_GravityMain"]
+  }, {
+    "id": "Sew_Pumpstation_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#005A10",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Sew_Pumpstation"]
+  }, {
+    "id": "Sew_Pumpstation_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#005A10",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Sew_Pumpstation"]
+
+  }, {
+    "id": "Sew_Pumpstation_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#005A10",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Sew_Pumpstation"]
+  }, {
+    "id": "Sew_ServiceLine_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#005A10",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Sew_ServiceLine"]
+  }, {
+    "id": "Sew_ServiceLine_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#005A10",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Sew_ServiceLine"]
+
+  }, {
+    "id": "Sew_ServiceLine_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#005A10",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Sew_ServiceLine"]
+  }, {
+    "id": "Wat_WaterSystemValve_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#1325FF",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Wat_WaterSystemValve"]
+  }, {
+    "id": "Wat_WaterSystemValve_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#1325FF",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Wat_WaterSystemValve"]
+
+  }, {
+    "id": "Wat_WaterSystemValve_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#1325FF",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Wat_WaterSystemValve"]
+  }, {
+    "id": "Wat_FireHydrant_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#1325FF",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Wat_FireHydrant"]
+  }, {
+    "id": "Wat_FireHydrant_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#1325FF",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Wat_FireHydrant"]
+
+  }, {
+    "id": "Wat_FireHydrant_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#1325FF",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Wat_FireHydrant"]
+  }, {
+    "id": "Wat_WaterMain_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#1325FF",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Wat_WaterMain"]
+  }, {
+    "id": "Wat_WaterMain_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#1325FF",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Wat_WaterMain"]
+
+  }, {
+    "id": "Wat_WaterMain_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#1325FF",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Wat_WaterMain"]
+  }, {
+    "id": "Wat_WaterControlValve_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#1325FF",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Wat_WaterControlValve"]
+  }, {
+    "id": "Wat_WaterControlValve_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#1325FF",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Wat_WaterControlValve"]
+
+  }, {
+    "id": "Wat_WaterControlValve_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#1325FF",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Wat_WaterControlValve"]
+  }, {
+    "id": "Wat_WaterServiceLine_line",
+    "type": "line",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#1325FF",
+      "line-width": 8
+    },
+    "filter": ["==", "layername", "Wat_WaterServiceLine"]
+  }, {
+    "id": "Wat_WaterServiceLine_point",
+    "type": "circle",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "paint": {
+      "circle-color": "#1325FF",
+      "circle-radius": 5
+    },
+    "filter": ["==", "layername", "Wat_WaterServiceLine"]
+
+  }, {
+    "id": "Wat_WaterServiceLine_polygon",
+    "type": "fill",
+    "source": "gucdata",
+    "source-layer": "featurelayers",
+    "layout": {},
+    "paint": {
+      "fill-color": "#1325FF",
+      "fill-opacity": 0.8
+    },
+    "filter": ["==", "layername", "Wat_WaterServiceLine"]
+  }
+
+
+  ]
+}

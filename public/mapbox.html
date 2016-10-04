@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYnVja2NhIiwiYSI6ImNpam9leDVkcjAwdXZ1Mmtvb3Q1czNpenUifQ.fMw81DFoeF3IPbVYdXlrbg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'http://localhost:3000/style',
+    zoom: 15,
+    center: [-77.37318187952042, 35.61155180826724],
+    hash: true
+});
+
+
+map.on('load', function () {
+    // map.addSource('basemap', {
+    //     type: 'raster',
+    //     url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer'
+    // });
+    // map.addSource('gucdata', {
+    //     type: 'vector',
+    //     tiles: [ 'http://localhost:3000/featurelayers/{z}/{x}/{y}.pbf']
+    // });
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.Navigation());
+});
+var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart; 
+window.onload = function () {
+    var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
+    console.log('Page load time is '+ loadTime);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "vectortileserver",
+  "version": "1.0.1",
+  "description": "Converts PostGIS queries to pbf vector tiles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "postgis",
+    "vector-tiles"
+  ],
+  "author": "Tobin Bradley",
+  "license": "MIT",
+  "dependencies": {
+    "caching": "git://github.com/faradayio/node-caching.git",
+    "chokidar": "^1.4.3",
+    "d3-queue": "^2.0.2",
+    "geojson-vt": "^2.1.8",
+    "hapi": "^13.0.0",
+    "inert": "^4.0.2",
+    "pg": "^4.4.6",
+    "redis": "^2.6.2",
+    "sphericalmercator": "^1.0.4",
+    "squel": "^4.3.0",
+    "vt-pbf": "^2.0.2"
+  }
+}
