@@ -18,12 +18,18 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYnVja2NhIiwiYSI6ImNpam9leDVkcjAwdXZ1Mmtvb3Q1c
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'http://localhost:3000/style',
-    zoom: 15,
-    center: [-77.37318187952042, 35.61155180826724],
+    zoom: 14,
+    center: [-77.3730, 35.6120],
     hash: true
 });
 
-
+// map.fitBounds([[
+//          -9543978.162101574,
+//          3970973.2725841426
+//     ], [
+//         -8580785.85307762,
+//         4288788.160585959
+//     ]]);
 map.on('load', function () {
     // map.addSource('basemap', {
     //     type: 'raster',
