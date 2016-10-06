@@ -11,6 +11,7 @@ zlib = require('zlib'),
 vtpbf = require('vt-pbf'),
 geojsonVt = require('geojson-vt'),
 inert = require('inert'); //serves static files
+util = require('util');
 
 var Caching = require('caching');
 var cache = new Caching('redis'); /* use 'memory' or 'redis' */
@@ -33,7 +34,7 @@ function generateSQL(bbox) {
         .from(
             squel.select()
             .field("'Feature' As type")
-            .field(`ST_AsGeoJSON(ST_transform(ST_Simplify(lg.wkb_geometry, 400), 4326), 6)::json As geometry`)
+            .field(`ST_AsGeoJSON(ST_transform(ST_Simplify(lg.wkb_geometry, 10000000000), 4326), 6)::json As geometry`)
             .field(`row_to_json((SELECT l FROM (SELECT layername) As l)) As properties`)
             .from(`guc_all_utilities As lg`) 
             .where(`lg.wkb_geometry && ST_Transform(ST_MakeEnvelope(${bbox.join(',')} , 4326), find_srid('', 'guc_all_utilities', 'wkb_geometry'))`)
@@ -67,7 +68,11 @@ server.route({
                         } else {
                             geoJSON = result.rows[0].row_to_json;
                             // fetchig tile index vt
-                            var tileIndex = geojsonVt(geoJSON);
+                            var tileIndex = geojsonVt(geoJSON,{
+                                debug:1
+                            });
+
+                            console.log(util.inspect(tileIndex));
                             var tile = tileIndex.getTile(parseInt(request.params.z, 10), parseInt(request.params.x, 10), parseInt(request.params.y));
                             passalong(null, tile);
                             }
